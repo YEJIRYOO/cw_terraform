@@ -1,0 +1,8 @@
+- name: file module test
+  hosts: nodeA
+  tasks:
+    - file: 
+        path: /tmp/testfile
+        owner: ansible-user
+        mode: '0644'
+        state: touch
